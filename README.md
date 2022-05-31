@@ -1,5 +1,9 @@
 # sgalivre
 
+**Maquina virtual com debian**
+
+https://drive.google.com/file/d/1qIaarbfne1zbTHhyIkgTFUCZDuolK_Kg/view?usp=sharing
+
 **Instalar Git**
 
 `sudo apt install git -y`
