@@ -27,3 +27,12 @@ Procurar a linha *short_open_tag é deixar da seguinte forma **short_open_tag = 
 **Restart do apache2**
 
 `sudo systemctl restart apache2`
+
+
+**Verificar instalação do SGALivre**
+
+[http://locahost/sgalivre](http://locahost/sgalivre)
+
+**Verificar instalação do postgres**
+
+`sudo -u postgres psql -c "SELECT version();"`
