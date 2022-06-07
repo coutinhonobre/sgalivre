@@ -40,7 +40,6 @@ Procurar a linha *short_open_tag é deixar da seguinte forma **short_open_tag = 
 
 `sudo -u postgres psql -c "SELECT version();"`
 
-
 **Maquina virtual de exemplo com softaware já instalado**
 
 *banco postgres*: `sgalivre`
@@ -54,3 +53,17 @@ Procurar a linha *short_open_tag é deixar da seguinte forma **short_open_tag = 
 *senha sgalivre*: `sgalivre`
 
 https://drive.google.com/file/d/18MIz18t-4lGOGX_h3lWlf18eXoOmVfEw/view?usp=sharing
+
+# **Instalação do controlador de paineis**
+
+Instalar o controlador de paineis
+
+`sudo bash ./scriptcontroladorpaineis.sh`
+
+Necessário configurar o arquivo `server.conf` que se encontrar no `/usr/local/sgalivre-controladorpaineis` deve ser alterado os trechos abaixo.
+
+* jdbcUrl = jdbc:postgresql://127.0.0.1/sgalivre
+* urlUnidades = http://10.0.0.2/sgalivre/painel/get_unidades.php
+* urlServicos = http://10.0.0.2/sgalivre/painel/get_servicos.php?id_uni=%id_unidade%
+
+Apos as alterações acima deve ser inicializado o controlador de paineis com o comando `sudo bash /usr/local/sgalivre-controladorpaineis/install.sh`
