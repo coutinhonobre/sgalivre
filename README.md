@@ -67,3 +67,10 @@ Necessário configurar o arquivo `server.conf` que se encontrar no `/usr/local/s
 * urlServicos = http://10.0.0.2/sgalivre/painel/get_servicos.php?id_uni=%id_unidade%
 
 Apos as alterações acima deve ser inicializado o controlador de paineis com o comando `sudo bash /usr/local/sgalivre-controladorpaineis/install.sh`
+
+
+# Instalação do Painel
+
+Necessário rodar o script `sudo bash ./scriptpainel.sh`
+
+Apos a instalação será possivel encontrar o painel com app do sistemas operacional
