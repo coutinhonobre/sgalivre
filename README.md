@@ -65,9 +65,9 @@ Necessário configurar o arquivo `server.conf` que se encontrar no `/usr/local/s
 * jdbcUrl = jdbc:postgresql://127.0.0.1/sgalivre
 * urlUnidades = http://10.0.0.2/sgalivre/painel/get_unidades.php
 * urlServicos = http://10.0.0.2/sgalivre/painel/get_servicos.php?id_uni=%id_unidade%
+* jdbcPass = postgres
 
 Apos as alterações acima deve ser inicializado o controlador de paineis com o comando `sudo bash /usr/local/sgalivre-controladorpaineis/install.sh`
-
 
 # Instalação do Painel
 
