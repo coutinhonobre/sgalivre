@@ -67,7 +67,31 @@ Necessário configurar o arquivo `server.conf` que se encontrar no `/usr/local/s
 * urlServicos = http://10.0.0.2/sgalivre/painel/get_servicos.php?id_uni=%id_unidade%
 * jdbcPass = postgres
 
-Apos as alterações acima deve ser inicializado o controlador de paineis com o comando `sudo bash /usr/local/sgalivre-controladorpaineis/install.sh`
+Necessário habilitar o postgres para chamadas remotas
+
+
+```
+sudo nano /etc/postgresql/13/main/pg_hba.conf
+```
+
+Adicionar a linha 
+
+```
+host all all 0.0.0.0/0 trust
+```
+
+`sudo nano /etc/postgresql/13/main/postgresqlpg_hb.conf`
+
+Modifique o `#listen_address` para `listen_address = '*'`
+
+Restart do banco de dado
+
+```sql
+/etc/init.d/postgresql restart
+```
+
+
+Apos as alterações acima deve ser inicializado o controlador de paineis com o comando `sudo bash /usr/local/sgalivre-controladorpaineis/controladorpaineis.sh`
 
 # Instalação do Painel
 
