@@ -69,12 +69,11 @@ Necessário configurar o arquivo `server.conf` que se encontrar no `/usr/local/s
 
 Necessário habilitar o postgres para chamadas remotas
 
-
 ```
 sudo nano /etc/postgresql/13/main/pg_hba.conf
 ```
 
-Adicionar a linha 
+Adicionar a linha
 
 ```
 host all all 0.0.0.0/0 trust
@@ -90,7 +89,6 @@ Restart do banco de dado
 /etc/init.d/postgresql restart
 ```
 
-
 Apos as alterações acima deve ser inicializado o controlador de paineis com o comando `sudo bash /usr/local/sgalivre-controladorpaineis/controladorpaineis.sh`
 
 # Instalação do Painel
@@ -98,3 +96,11 @@ Apos as alterações acima deve ser inicializado o controlador de paineis com o 
 Necessário rodar o script `sudo bash ./scriptpainel.sh`
 
 Apos a instalação será possivel encontrar o painel com app do sistemas operacional
+
+Painel já configurado
+
+https://drive.google.com/file/d/13izvZGdRL4sPBkPPOu3-hypc9kARPgCm/view
+
+Usuario: `painel`
+
+Senha: `sgalivre`
